@@ -10,6 +10,8 @@ export class AppComponent {
   @ViewChild('f') signupForm: NgForm;
   defaultQuestion = "pet";
   answer = '';
+  genders = ['Male', 'Female'];
+
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
@@ -18,6 +20,6 @@ export class AppComponent {
   // }
 
   onSubmit(){
-    this.signupForm;
+    console.log(this.signupForm);
   }
 }
